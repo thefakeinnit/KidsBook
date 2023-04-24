@@ -1,0 +1,147 @@
+<link rel="icon" 
+      type="image/png" 
+      href="favicon.png">
+<head>
+<style type="text/css">
+.auto-style1 {
+	text-align: center;
+}
+.auto-style4 {
+	background-color: #008000;
+}
+.auto-style5 {
+	background-color: #04612C;
+}
+.auto-style6 {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	font-size: medium;
+	background-color: #04612C;
+}
+.auto-style12 {
+	background-image: url('pics/0a74c2e.jpg');
+}
+.auto-style7 {
+	border: 1px solid #04612C;
+	background-color: #04612C;
+}
+.auto-style8 {
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+}
+.auto-style11 {
+	text-align: left;
+}
+.auto-style10 {
+	text-align: right;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	background-color: #04612C;
+}
+.auto-style13 {
+	margin-top: 105px;
+}
+.auto-style14 {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+}
+</style>
+<title>KidsBook Members Joining page</title>
+</head>
+
+<script type = "text/javascript">
+
+
+var count = 2;
+function validate() {
+var un = document.myform.username.value;
+var pw = document.myform.pword.value;
+var valid = false;
+
+var unArray = ["alex", "georgia", "granddad", "nonna"];  // as many as you like - no comma after final entry
+var pwArray = ["neverhack", "onedirection831", "mad831666", "nonna831"];  // the corresponding passwords;
+
+for (var i=0; i <unArray.length; i++) {
+if ((un == unArray[i]) && (pw == pwArray[i])) {
+valid = true;
+break;
+}
+}
+
+if (valid) {
+alert ("Thank You Login was successful");
+window.location = "start.html";
+return false;
+}
+
+var t = " tries";
+if (count == 1) {t = " try"}
+
+if (count >= 1) {
+alert ("Invalid username and/or password.  You have " + count + t + " left.");
+document.myform.username.value = "";
+document.myform.pword.value = "";
+setTimeout("document.myform.username.focus()", 25);
+setTimeout("document.myform.username.select()", 25);
+count --;
+}
+
+else {
+alert ("Still incorrect! You have no more tries left!");
+document.myform.username.value = "No more tries allowed!";
+document.myform.pword.value = "";
+document.myform.username.disabled = true;
+document.myform.pword.disabled = true;
+return false;
+}
+
+}
+
+</script>
+
+<body style="background-image: url('bg.png'); height: 698px;">
+
+<form name = "myform">
+	<table cellpadding="0" cellspacing="0" class="auto-style4" style="width: 100%">
+		<tr>
+			<td class="auto-style5" style="width: 951px">
+			&nbsp;&nbsp;&nbsp;
+			<img alt="KidsBook" height="99" src="pics/icon%20100.png" width="100"></td>
+			<td class="auto-style6">www.kids-book.co.uk</td>
+		</tr>
+	</table>
+	<table cellpadding="0" cellspacing="0" class="auto-style12" style="width: 100%; height: 617px">
+		<tr>
+			<td class="auto-style1"><br><br>
+	<table align="center" class="auto-style7" style="width: 60%">
+		<tr>
+			<td>
+			<p class="auto-style8"><br>&nbsp;&nbsp; Welcome to Kids Book the social website for 
+			kids,</p>
+			<p class="auto-style11">&nbsp;</p>
+			<p class="auto-style14">Kids Book was a little project that I had 
+			started when I was 9 years old in 2015</p>
+			<p class="auto-style14">The reason I made this was becuase I was 
+			told I couldn't have a Facebook account becuase I wasn't old enough.</p>
+			<p class="auto-style14">So I made Kids Book and said if you were old 
+			enough to be on Facebook, you were too old to be on KidsBook LOL</p>
+			<p class="auto-style1">&nbsp;</p>
+
+			</td>
+		</tr>
+	</table>
+
+			<br><br><br><br><br></td>
+		</tr>
+	</table>
+
+</form>
+<table cellspacing="1" style="width: 100%; height: 83px" class="auto-style13">
+	<tr>
+		<td class="auto-style10">Copyright 2023 KidsBook. Website 
+		owned and operated by Alex Iuliano aged 16&nbsp;&nbsp;&nbsp;&nbsp; </td>
+	</tr>
+</table>
